@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EU:s nya "Right to Predictability Act" skakar om försäkringsbranschen – Risk &amp; Försäkring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    background: #f5f5f0;
+    color: #1a1a1a;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* === TOP BAR (DI style) === */
+  .top-bar {
+    background: #000;
+    color: #fff;
+    font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    padding: 6px 0;
+    letter-spacing: 0.03em;
+  }
+  .top-bar-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-bar a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 16px;
+  }
+  .top-bar a:hover { color: #fff; }
+  .top-bar .right-links { display: flex; gap: 14px; align-items: center; }
+  .top-bar .login-btn {
+    background: #c8102e;
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* === HEADER === */
+  .site-header {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0;
+  }
+  .header-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 14px 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo-text {
+    font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    line-height: 1.1;
+  }
+  .logo-text span {
+    color: #c8102e;
+  }
+  .logo-subtext {
+    font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .header-search {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+  }
+  .header-search svg { width: 16px; height: 16px; fill: #666; }
+
+  /* === NAV === */
+  .main-nav {
+    background: #fff;
+    border-bottom: 3px solid #c8102e;
+  }
+  .nav-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+  }
+  .nav-inner a {
+    font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 14px;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: border-color 0.2s;
+  }
+  .nav-inner a:hover, .nav-inner a.active {
+    border-bottom-color: #c8102e;
+    color: #c8102e;
+  }
+
+  /* === ARTICLE === */
+  .article-container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+  }
+
+  .article-meta-top {
+    font-family: 'Source Sans 3', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .article-category {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c8102e;
+  }
+  .article-date {
+    font-size: 12px;
+    color: #888;
+  }
+
+  .article-headline {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.18;
+    color: #111;
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+
+  .article-lead {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+
+  /* Hero image */
+  .article-hero {
+    margin-bottom: 6px;
+    position: relative;
+  }
+  .article-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+  }
+  .hero-placeholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #002868 0%, #003399 40%, #001f5c 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse at 30% 50%, rgba(255,204,0,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse at 70% 30%, rgba(0,51,153,0.3) 0%, transparent 50%);
+  }
+  .eu-flag-visual {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .eu-stars {
+    font-size: 48px;
+    letter-spacing: 6px;
+    color: #ffcc00;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .eu-overlay-text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(255,255,255,0.7);
+  }
+  .hero-caption {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    color: #999;
+    padding: 6px 0 20px;
+    line-height: 1.4;
+  }
+
+  /* Author */
+  .article-byline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .byline-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #666;
+  }
+  .byline-info {
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  .byline-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  .byline-role {
+    font-size: 12px;
+    color: #888;
+  }
+
+  /* Share */
+  .share-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+  .share-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    border: none;
+  }
+  .share-btn:hover { background: #e0e0e0; }
+  .share-btn svg { width: 16px; height: 16px; fill: #555; }
+
+  /* Body text */
+  .article-body p {
+    font-size: 18px;
+    line-height: 1.75;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  .article-body p:first-child::first-letter {
+    font-size: 58px;
+    float: left;
+    line-height: 0.85;
+    margin-right: 8px;
+    margin-top: 6px;
+    font-weight: 700;
+    color: #c8102e;
+  }
+
+  .article-body h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 36px 0 14px;
+    color: #111;
+  }
+
+  .article-body blockquote {
+    border-left: 4px solid #c8102e;
+    margin: 28px 0;
+    padding: 16px 24px;
+    background: #fafafa;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .article-body blockquote cite {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+
+  .article-body .fact-box {
+    background: #f8f5ee;
+    border: 1px solid #e5e0d5;
+    padding: 24px 28px;
+    margin: 30px 0;
+    border-radius: 2px;
+  }
+  .fact-box h3 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #c8102e;
+    margin-bottom: 12px;
+  }
+  .fact-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .fact-box ul li {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 5px 0;
+    padding-left: 18px;
+    position: relative;
+    color: #333;
+  }
+  .fact-box ul li::before {
+    content: '■';
+    position: absolute;
+    left: 0;
+    color: #c8102e;
+    font-size: 9px;
+    top: 8px;
+  }
+
+  .inline-image {
+    margin: 30px 0;
+  }
+  .inline-image .img-placeholder {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .inline-image .img-placeholder::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 40px),
+      repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 40px);
+  }
+  .inline-image .img-placeholder .icon-ai {
+    font-size: 64px;
+    opacity: 0.25;
+    z-index: 1;
+    position: relative;
+  }
+  .inline-image .caption {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    color: #999;
+    padding-top: 6px;
+    line-height: 1.4;
+  }
+
+  /* Tags */
+  .article-tags {
+    margin-top: 36px;
+    padding-top: 18px;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .article-tags span {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    background: #f0f0f0;
+    padding: 4px 12px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* Related articles */
+  .related-section {
+    max-width: 680px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+  }
+  .related-section h3 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c8102e;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c8102e;
+  }
+  .related-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .related-item a {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+    line-height: 1.35;
+  }
+  .related-item a:hover { color: #c8102e; }
+  .related-item .related-date {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 3px;
+  }
+
+  /* Footer */
+  .site-footer {
+    background: #1a1a1a;
+    color: #999;
+    padding: 40px 20px 30px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+  }
+  .footer-inner {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .footer-brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .footer-brand span { color: #c8102e; }
+  .footer-tagline {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-links a {
+    color: #888;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .footer-links a:hover { color: #fff; }
+  .footer-copy {
+    border-top: 1px solid #333;
+    padding-top: 16px;
+    font-size: 11px;
+    color: #555;
+  }
+
+  /* April april */
+  .april-reveal {
+    text-align: center;
+    padding: 60px 20px 30px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11px;
+    color: #ccc;
+    letter-spacing: 0.02em;
+  }
+
+  /* Paywall teaser */
+  .paywall-teaser {
+    background: linear-gradient(to bottom, transparent 0%, #f5f5f0 30%);
+    padding: 40px 0 0;
+    margin-top: -20px;
+    position: relative;
+  }
+  .paywall-box {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 28px 32px;
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .paywall-box h3 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #111;
+  }
+  .paywall-box p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  .paywall-box .cta-btn {
+    display: inline-block;
+    background: #c8102e;
+    color: #fff;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 11px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+  .paywall-box .login-link {
+    display: block;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+  }
+  .paywall-box .login-link a { color: #c8102e; text-decoration: underline; }
+
+  /* Premium badge */
+  .premium-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #c8102e;
+    color: #fff;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 3px 8px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .article-headline { font-size: 28px; }
+    .article-lead { font-size: 17px; }
+    .article-body p { font-size: 16px; }
+    .nav-inner a { font-size: 11px; padding: 8px 10px; }
+    .header-inner { padding: 10px 16px; }
+    .logo-text { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div>
+      <a href="#">Di.se</a>
+      <a href="#">Di Digital</a>
+      <a href="#">Di Weekend</a>
+      <a href="#" style="color:#fff; font-weight:600;">Risk &amp; Försäkring</a>
+    </div>
+    <div class="right-links">
+      <a href="#">Nyhetsbrev</a>
+      <a href="#">Kundservice</a>
+      <a href="#" class="login-btn">Logga in</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="site-header">
+  <div class="header-inner">
+    <div class="logo-area">
+      <a href="#" class="logo-text">Risk <span>&amp;</span> Försäkring</a>
+      <div class="logo-subtext">En del av Dagens Industri</div>
+    </div>
+    <div class="header-right">
+      <div class="header-search">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        Sök
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <a href="#">Nyheter</a>
+    <a href="#" class="active">Reglering</a>
+    <a href="#">Bolag</a>
+    <a href="#">Liv &amp; Pension</a>
+    <a href="#">Skadeförsäkring</a>
+    <a href="#">Förmedlare</a>
+    <a href="#">Karriär</a>
+    <a href="#">Debatt</a>
+    <a href="#">Podd</a>
+  </div>
+</nav>
+
+<!-- ARTICLE -->
+<article class="article-container">
+  
+  <div class="article-meta-top">
+    <span class="article-category">EU-reglering</span>
+    <span class="article-date">1 april 2026 &nbsp;·&nbsp; 06:30</span>
+  </div>
+
+  <h1 class="article-headline">EU:s nya "Right to Predictability Act" kan tvinga försäkringsbolag att förannonsera alla premieändringar</h1>
+
+  <p class="article-lead">EU-kommissionen har lagt fram ett nytt lagförslag som kräver att alla premieändringar ska kommuniceras minst 30 dagar i förväg – och att AI-modeller för prissättning ska vara "emotionellt begripliga". Branschen reagerar med en blandning av förvirring och panik.</p>
+
+  <!-- HERO IMAGE -->
+  <div class="article-hero">
+    <div class="hero-placeholder">
+      <div class="eu-flag-visual">
+        <div class="eu-stars">★ ★ ★ ★ ★ ★<br>★ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ★<br>★ ★ ★ ★ ★ ★</div>
+        <div class="eu-overlay-text">European Commission · Bryssel</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-caption">EU-kommissionens huvudkvarter i Bryssel, där det kontroversiella lagförslaget presenterades under måndagen. Foto: EU-kommissionen</div>
+
+  <!-- BYLINE -->
+  <div class="article-byline">
+    <div class="byline-avatar">JE</div>
+    <div class="byline-info">
+      <div class="byline-name">Jonas Engmark</div>
+      <div class="byline-role">Redaktör, Risk &amp; Försäkring</div>
+    </div>
+  </div>
+
+  <!-- SHARE -->
+  <div class="share-bar">
+    <button class="share-btn" title="Dela på LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+    </button>
+    <button class="share-btn" title="Dela på X">
+      <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </button>
+    <button class="share-btn" title="Dela via e-post">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </button>
+    <button class="share-btn" title="Kopiera länk">
+      <svg viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+    </button>
+  </div>
+
+  <!-- BODY -->
+  <div class="article-body">
+
+    <p>Det var en ovanligt laddad presskonferens i Bryssel under måndagen när EU-kommissionären för finansiella tjänster, tillsammans med en rad höga tjänstemän, presenterade det som redan nu kallas för den mest genomgripande regleringen av försäkringsbranschen sedan Solvens II. Lagförslaget, som formellt bär namnet "Right to Predictability Act" (RPA), syftar enligt kommissionen till att "återge konsumenten makten över sin egen ekonomiska framtid".</p>
+
+    <p>I praktiken innebär det att samtliga försäkringsbolag verksamma inom EU:s inre marknad måste förannonsera premieändringar minst 30 dagar innan de träder i kraft. Men det stannar inte där – lagförslaget innehåller också en bestämmelse som ger kunder rätt att formellt bestrida planerade prishöjningar genom en ny EU-myndighet, den så kallade "European Premium Dispute Authority" (EPDA).</p>
+
+    <div class="fact-box">
+      <h3>Fakta: Right to Predictability Act (RPA)</h3>
+      <ul>
+        <li>Alla premieändringar måste kommuniceras till kunden minst 30 dagar före ikraftträdande</li>
+        <li>Kunder får rätt att bestrida framtida prishöjningar via ny EU-myndighet (EPDA)</li>
+        <li>AI-baserade prissättningsmodeller måste vara "emotionellt begripliga" för genomsnittskonsumenten</li>
+        <li>Black-box pricing förbjuds och klassas som brott mot grundläggande konsumenträttigheter</li>
+        <li>Förslaget berör samtliga försäkringsgrenar – liv, sak och hälsa</li>
+        <li>Planerat ikraftträdande: 1 januari 2028</li>
+      </ul>
+    </div>
+
+    <h2>"Ingen vet vad det betyder"</h2>
+
+    <p>Den formulering som väckt mest uppmärksamhet – och mest förvirring – är kravet på att AI-modeller som används för prissättning ska vara "emotionellt begripliga". Begreppet definieras i lagförslagets artikel 14.3 som att "den genomsnittliga konsumenten, utan specialiserad kunskap, ska kunna förstå och känslomässigt relatera till den logik som ligger bakom en premieberäkning".</p>
+
+    <blockquote>
+      "Vi har läst artikel 14.3 upprepade gånger och vi förstår uppriktigt sagt inte vad kommissionen menar. Att en AI-modell ska vara 'emotionellt begriplig' – vad innebär det konkret? Ska kunden känna sig lugn? Glad? Ska algoritmen skriva poesi?"
+      <cite>– Marie Holmström, chefsjurist vid Svensk Försäkring</cite>
+    </blockquote>
+
+    <p>Svensk Försäkring har redan meddelat att man avser att tillsätta en arbetsgrupp för att analysera konsekvenserna av lagförslaget. Branschorganisationen Insurance Europe, som representerar den europeiska försäkringsbranschen, har gått steget längre och kallat förslaget "välmenande men operativt omöjligt".</p>
+
+    <h2>Black-box pricing under attack</h2>
+
+    <p>En central del av lagförslaget är att så kallad "black-box pricing" – där komplexa algoritmer bestämmer premier utan att den bakomliggande logiken kan förklaras i detalj – uttryckligen förbjuds. Kommissionen klassificerar detta som ett brott mot grundläggande konsumenträttigheter, i linje med GDPR:s krav på förklarbarhet vid automatiserat beslutsfattande.</p>
+
+    <div class="inline-image">
+      <div class="img-placeholder">
+        <div class="icon-ai">🤖</div>
+      </div>
+      <div class="caption">AI-baserad prissättning står inför stora utmaningar om lagförslaget går igenom. Illustration: Risk &amp; Försäkring</div>
+    </div>
+
+    <p>För svenska försäkringsbolag, som i allt högre grad förlitar sig på maskininlärning och avancerad dataanalys för att sätta premier, kan konsekvenserna bli dramatiska. Flera aktörer som Risk &amp; Försäkring talat med beskriver situationen som "en mardröm" ur ett compliance-perspektiv.</p>
+
+    <p>"Vi har investerat hundratals miljoner i vår AI-plattform under de senaste åren. Om vi plötsligt måste göra varje enskild premieberäkning 'emotionellt begriplig' – ja, då vet jag ärligt talat inte vad vi gör. Det är som att kräva att en väderprognos ska göra dig lycklig", säger en teknikchef vid ett av de större nordiska försäkringsbolagen som vill vara anonym.</p>
+
+    <h2>30 dagars förvarning – en logistisk mardröm</h2>
+
+    <p>Kravet på 30 dagars förvarning vid premieändringar innebär i praktiken att försäkringsbolag inte längre kan göra dynamiska prisjusteringar baserade på realtidsdata. Det slår hårt mot bolag som satsar på automatiserad och datadriven prissättning, där premier kan justeras löpande baserat på riskförändringar.</p>
+
+    <p>Enligt beräkningar från konsultfirman McKinsey, som citeras i kommissionens konsekvensanalys, skulle kravet medföra en merkostnad för branschen på uppskattningsvis 2,4 miljarder euro per år i administrativa kostnader – exklusive de systemförändringar som krävs.</p>
+
+    <blockquote>
+      "Det finns en underliggande ironi i att ett lagförslag som syftar till att göra premier mer förutsägbara sannolikt kommer att leda till att de blir högre. Någon måste ju betala för denna enorma byråkratiska apparat."
+      <cite>– Erik Lindqvist, partner vid Deloitte Financial Services</cite>
+    </blockquote>
+
+    <h2>EIOPA:s roll</h2>
+
+    <p>Den europeiska försäkringsmyndigheten EIOPA förväntas få en central roll i implementeringen av det nya regelverket. Enligt lagförslaget ska EIOPA utarbeta tekniska standarder för vad som utgör "emotionell begriplighet" senast vid utgången av 2027 – ett uppdrag som flera bedömare beskriver som "historiskt utmanande".</p>
+
+    <p>EIOPA:s ordförande Petra Hielkema kommenterade lagförslaget i ett kort uttalande: "Vi välkomnar kommissionens ambition att stärka konsumentskyddet. Vi ser dock ett behov av ytterligare dialog kring de praktiska aspekterna av implementeringen."</p>
+
+    <h2>Vad händer nu?</h2>
+
+    <p>Lagförslaget går nu vidare till Europaparlamentet och rådet för behandling. Den politiska processen väntas ta minst 18 månader. Flera EU-parlamentariker har redan signalerat att förslaget kan behöva omarbetas väsentligt, men kommissionen har tydliggjort att man inte avser att backa från de centrala principerna.</p>
+
+    <p>I Sverige har Finansinspektionen meddelat att man "noga bevakar" utvecklingen och att myndigheten kommer att publicera en preliminär konsekvensanalys för den svenska marknaden under hösten.</p>
+
+    <p>Risk &amp; Försäkring kommer att följa utvecklingen löpande.</p>
+
+  </div>
+
+  <!-- TAGS -->
+  <div class="article-tags">
+    <span>EU-reglering</span>
+    <span>AI</span>
+    <span>Prissättning</span>
+    <span>Konsumentskydd</span>
+    <span>EIOPA</span>
+    <span>Solvens II</span>
+  </div>
+
+</article>
+
+<!-- RELATED -->
+<div class="related-section">
+  <h3>Relaterade artiklar</h3>
+  <div class="related-item">
+    <a href="#">EIOPA varnar för systemrisker i europeisk sakförsäkring</a>
+    <div class="related-date">28 mars 2026</div>
+  </div>
+  <div class="related-item">
+    <a href="#">Svensk Försäkring: "AI-reglering hotar innovationstakten"</a>
+    <div class="related-date">22 mars 2026</div>
+  </div>
+  <div class="related-item">
+    <a href="#">Så påverkas nordiska bolag av EU:s nya transparenskrav</a>
+    <div class="related-date">15 mars 2026</div>
+  </div>
+  <div class="related-item">
+    <a href="#">McKinsey: Försäkringsbranschen underskattar regulatoriska kostnader</a>
+    <div class="related-date">8 mars 2026</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">Risk <span>&amp;</span> Försäkring</div>
+    <div class="footer-tagline">En del av Bonnier News / Dagens Industri</div>
+    <div class="footer-links">
+      <a href="#">Om oss</a>
+      <a href="#">Redaktion</a>
+      <a href="#">Annonsera</a>
+      <a href="#">Nyhetsbrev</a>
+      <a href="#">Prenumerera</a>
+      <a href="#">Kundservice</a>
+      <a href="#">Integritetspolicy</a>
+      <a href="#">Cookies</a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2026 Bonnier News Business AB. Alla rättigheter förbehållna. Ansvarig utgivare: Christina Kennedy.
+      <br>Kontakt redaktionen: jonas.engmark@di.se
+    </div>
+
+    <!-- THE REVEAL -->
+    <div class="april-reveal">
+      <br><br><br>
+      April, april ... :-)
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
